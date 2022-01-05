@@ -14,7 +14,7 @@ import utilities.DataUtil;
 public class LoadPageVerifyURLAndLogo extends BaseTest{
 	
 	@Test(dataProviderClass = DataUtil.class, dataProvider = "dp1")
-	public void loadPageVerifyURLAndLogo(String browserName, String pageLoadURL) {
+	public void loadPageVerifyURLAndLogo(String browserName, String pageLoadURL) throws InterruptedException {
 		
 		setUp(browserName);
 		
@@ -25,16 +25,16 @@ public class LoadPageVerifyURLAndLogo extends BaseTest{
 		
 		try {
 			Assert.assertEquals(currentURL, pageLoadURL);
-			ExtentListeners.test.log(Status.INFO, "The loaded URL is correct");
+			ExtentListeners.test.log(Status.INFO, "The URL navigated is correct: " +currentURL);
 			
 		}catch(Throwable t){
-			ExtentListeners.test.log(Status.FAIL, "The loaded URL is wrong");
+			ExtentListeners.test.log(Status.FAIL, "The URL navigated is wrong: " +currentURL);
 			Assert.fail();
 		}
 		
 		//Verify if the logo is displayed
 		BasePage.currysBase.verifyCurrysLogo();
-		
+
 	}
 
 }

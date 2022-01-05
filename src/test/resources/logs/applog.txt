@@ -1,6 +1,6 @@
-INFO    2022-01-05 10:22:02,650 [main] com.fasterxml.jackson.databind.deser.Deserializers$Base  - Config properties loaded !!
-INFO    2022-01-05 10:22:02,652 [main] com.fasterxml.jackson.databind.deser.Deserializers$Base  - OR properties loaded !!
-INFO    2022-01-05 10:22:09,090 [main] com.fasterxml.jackson.databind.deser.Deserializers$Base  - Launching Chrome !!
-INFO    2022-01-05 10:22:14,521 [main] com.fasterxml.jackson.databind.deser.Deserializers$Base  - Navigating to url: https://www.currys.co.uk/
-INFO    2022-01-05 10:22:29,613 [main] com.fasterxml.jackson.databind.deser.Deserializers$Base  - DB connection establised !!
-INFO    2022-01-05 10:22:31,749 [main] com.fasterxml.jackson.databind.deser.Deserializers$Base  - Test Execution completed
+INFO    2022-01-05 17:49:23,062 [main] com.fasterxml.jackson.databind.deser.Deserializers$Base  - Config properties loaded !!
+INFO    2022-01-05 17:49:23,064 [main] com.fasterxml.jackson.databind.deser.Deserializers$Base  - OR properties loaded !!
+INFO    2022-01-05 17:49:29,478 [main] com.fasterxml.jackson.databind.deser.Deserializers$Base  - Launching Chrome !!
+INFO    2022-01-05 17:49:34,716 [main] com.fasterxml.jackson.databind.deser.Deserializers$Base  - Navigating to url: https://www.currys.co.uk/
+INFO    2022-01-05 17:49:49,858 [main] com.fasterxml.jackson.databind.deser.Deserializers$Base  - DB connection establised !!
+INFO    2022-01-05 17:49:54,357 [main] com.fasterxml.jackson.databind.deser.Deserializers$Base  - Test Execution completed
