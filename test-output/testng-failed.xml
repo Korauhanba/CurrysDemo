@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="extentlisteners.ExtentListeners"/>
+  </listeners>
+  <test thread-count="5" name="Load Page Verify URL and Logo(failed)">
+    <classes>
+      <class name="testcases.LoadPageVerifyURLAndLogo">
+        <methods>
+          <include name="tearDown"/>
+          <include name="loadPageVerifyURLAndLogo" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testcases.LoadPageVerifyURLAndLogo -->
+    </classes>
+  </test> <!-- Load Page Verify URL and Logo(failed) -->
+</suite> <!-- Failed suite [Suite] -->
