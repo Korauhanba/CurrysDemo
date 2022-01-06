@@ -9,29 +9,19 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Load Page Verify URL and Logo</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">29,241</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Load Page Verify URL and Logo</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">17,398</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Page navigation</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">43,142</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">2</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">60,540</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Load Page Verify URL and Logo &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testcases.LoadPageVerifyURLAndLogo</td><td><a href="#m0">loadPageVerifyURLAndLogo</a></td><td rowspan="1">1641378122611</td><td rowspan="1">27228</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Load Page Verify URL and Logo &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testcases.LoadPageVerifyURLAndLogoTest</td><td><a href="#m0">loadPageVerifyURLAndLogo</a></td><td rowspan="1">1641498537582</td><td rowspan="1">16361</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Page navigation &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testcases.MainMenuPageNavigationTest</td><td><a href="#m1">pageNavigation</a></td><td rowspan="1">1641498574762</td><td rowspan="1">22619</td></tr><tr><th colspan="4">Page navigation &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testcases.MainMenuPageNavigationTest</td><td><a href="#m2">pageNavigation</a></td><td rowspan="1">1641498555663</td><td rowspan="1">17991</td></tr></tbody>
 </table>
-<h2>Load Page Verify URL and Logo</h2><h3 id="m0">testcases.LoadPageVerifyURLAndLogo#loadPageVerifyURLAndLogo</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>chrome</td><td>https://www.currys.co.uk/gbuk/index.html</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.JavascriptException: javascript error: Invalid or unexpected token
-  (Session info: chrome=96.0.4664.110)
-Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
-System info: host: &apos;DESKTOP-11SJ4LJ&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [72c844fffd81b61287023dc5837113bb, executeScript {script=return arguments[0].complete &amp;&amp; typeof arguments[0].naturalWidth != \&quot;undefined\&quot; &amp;&amp; arguments[0].naturalWidth &gt; 0, args=[{ELEMENT=717316a2-a351-4309-b29d-f3b5c3311d98, element-6066-11e4-a52e-4f735466cecf=717316a2-a351-4309-b29d-f3b5c3311d98}]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\KORAUH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54965}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54965/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 72c844fffd81b61287023dc5837113bb
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:477)
-	at base.CurrysBase.verifyCurrysLogo(CurrysBase.java:25)
-	at testcases.LoadPageVerifyURLAndLogo.loadPageVerifyURLAndLogo(LoadPageVerifyURLAndLogo.java:36)
+<h2>Load Page Verify URL and Logo</h2><h3 id="m0">testcases.LoadPageVerifyURLAndLogoTest#loadPageVerifyURLAndLogo</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>chrome</td><td>https://www.currys.co.uk/gbuk/index.html</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Page navigation</h2><h3 id="m1">testcases.MainMenuPageNavigationTest#pageNavigation</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>chrome</td><td>Home &amp; Outdoor</td><td>Home &amp; Outdoor Accessories | Currys</td><td>home and outdoor</td></tr><tr><th colspan="4">Exception</th></tr><tr><td colspan="4"><div class="stacktrace">java.lang.AssertionError: null
+	at testcases.MainMenuPageNavigationTest.pageItemTitleValidation(MainMenuPageNavigationTest.java:58)
+	at testcases.MainMenuPageNavigationTest.pageNavigation(MainMenuPageNavigationTest.java:110)
 	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testcases.MainMenuPageNavigationTest#pageNavigation</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>chrome</td><td>Smart Tech</td><td>Smart Tech - Get the latest Smart Tech online here | Currys</td><td>Smart Tech</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

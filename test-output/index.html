@@ -56,7 +56,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,10 +104,29 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.LoadPageVerifyURLAndLogo" hash-for-method="loadPageVerifyURLAndLogo(chrome, https://www.currys.co.uk/gbuk/index.html)">loadPageVerifyURLAndLogo(chrome, https://www.currys.co.uk/gbuk/index.html)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.MainMenuPageNavigationTest" hash-for-method="pageNavigation(chrome, Home &amp; Outdoor, Home &amp; Outdoor Accessories | Currys, home and outdoor)">pageNavigation(chrome, Home & Outdoor, Home & Outdoor Accessories | Currys, home and outdoor)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.LoadPageVerifyURLAndLogoTest" hash-for-method="loadPageVerifyURLAndLogo(chrome, https://www.currys.co.uk/gbuk/index.html)">loadPageVerifyURLAndLogo(chrome, https://www.currys.co.uk/gbuk/index.html)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.MainMenuPageNavigationTest" hash-for-method="pageNavigation(chrome, Smart Tech, Smart Tech - Get the latest Smart Tech online here | Currys, Smart Tech)">pageNavigation(chrome, Smart Tech, Smart Tech - Get the latest Smart Tech online here | Currys, Smart Tech)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -122,7 +141,45 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">testcases.LoadPageVerifyURLAndLogo</span>
+              <span class="class-name">testcases.MainMenuPageNavigationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="pageNavigation(chrome, Home &amp; Outdoor, Home &amp; Outdoor Accessories | Currys, home and outdoor)">
+                  </a> <!-- pageNavigation(chrome, Home & Outdoor, Home & Outdoor Accessories | Currys, home and outdoor) -->
+                  <span class="method-name">pageNavigation</span>
+                  <span class="parameters">(chrome, Home & Outdoor, Home & Outdoor Accessories | Currys, home and outdoor)</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at testcases.MainMenuPageNavigationTest.pageItemTitleValidation(MainMenuPageNavigationTest.java:58)
+	at testcases.MainMenuPageNavigationTest.pageNavigation(MainMenuPageNavigationTest.java:110)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.MainMenuPageNavigationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="pageNavigation(chrome, Smart Tech, Smart Tech - Get the latest Smart Tech online here | Currys, Smart Tech)">
+                  </a> <!-- pageNavigation(chrome, Smart Tech, Smart Tech - Get the latest Smart Tech online here | Currys, Smart Tech) -->
+                  <span class="method-name">pageNavigation</span>
+                  <span class="parameters">(chrome, Smart Tech, Smart Tech - Get the latest Smart Tech online here | Currys, Smart Tech)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.LoadPageVerifyURLAndLogoTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -131,31 +188,10 @@
                   </a> <!-- loadPageVerifyURLAndLogo(chrome, https://www.currys.co.uk/gbuk/index.html) -->
                   <span class="method-name">loadPageVerifyURLAndLogo</span>
                   <span class="parameters">(chrome, https://www.currys.co.uk/gbuk/index.html)</span>
-                  <div class="stack-trace">org.openqa.selenium.JavascriptException: javascript error: Invalid or unexpected token
-  (Session info: chrome=96.0.4664.110)
-Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
-System info: host: &apos;DESKTOP-11SJ4LJ&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [72c844fffd81b61287023dc5837113bb, executeScript {script=return arguments[0].complete &amp;&amp; typeof arguments[0].naturalWidth != \&quot;undefined\&quot; &amp;&amp; arguments[0].naturalWidth &gt; 0, args=[{ELEMENT=717316a2-a351-4309-b29d-f3b5c3311d98, element-6066-11e4-a52e-4f735466cecf=717316a2-a351-4309-b29d-f3b5c3311d98}]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\KORAUH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54965}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54965/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 72c844fffd81b61287023dc5837113bb
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:477)
-	at base.CurrysBase.verifyCurrysLogo(CurrysBase.java:25)
-	at testcases.LoadPageVerifyURLAndLogo.loadPageVerifyURLAndLogo(LoadPageVerifyURLAndLogo.java:36)
-	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -171,9 +207,14 @@ Session ID: 72c844fffd81b61287023dc5837113bb
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Load Page Verify URL and Logo&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testcases.LoadPageVerifyURLAndLogo&quot;/&gt;
+      &lt;class name=&quot;testcases.LoadPageVerifyURLAndLogoTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Load Page Verify URL and Logo --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Page navigation&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcases.MainMenuPageNavigationTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Page navigation --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -186,6 +227,9 @@ Session ID: 72c844fffd81b61287023dc5837113bb
             <ul>
               <li>
                 <span class="test-name">Load Page Verify URL and Logo (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Page navigation (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -211,16 +255,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loadPageVerifyURLAndLogo')
-data.setCell(0, 2, 'testcases.LoadPageVerifyURLAndLogo')
-data.setCell(0, 3, 27228);
+data.setCell(0, 1, 'pageNavigation')
+data.setCell(0, 2, 'testcases.MainMenuPageNavigationTest')
+data.setCell(0, 3, 22619);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'pageNavigation')
+data.setCell(1, 2, 'testcases.MainMenuPageNavigationTest')
+data.setCell(1, 3, 17991);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'loadPageVerifyURLAndLogo')
+data.setCell(2, 2, 'testcases.LoadPageVerifyURLAndLogoTest')
+data.setCell(2, 3, 16361);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 27 seconds</span>
+              <span class="suite-total-time">Total running time: 56 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -246,16 +298,35 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testcases.LoadPageVerifyURLAndLogo</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testcases.LoadPageVerifyURLAndLogoTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">loadPageVerifyURLAndLogo(chrome, https://www.currys.co.uk/gbuk/index.html)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">27935 ms</span>
+                <span class="method-start">16377 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.MainMenuPageNavigationTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">pageNavigation(chrome, Smart Tech, Smart Tech - Get the latest Smart Tech online here | Currys, Smart Tech)</span>
+                <span class="method-start">18081 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">36077 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">pageNavigation(chrome, Home & Outdoor, Home & Outdoor Accessories | Currys, home and outdoor)</span>
+                <span class="method-start">37180 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">60118 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

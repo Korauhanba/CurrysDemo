@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="29241" started-at="2022-01-05T10:22:02 GMT" finished-at="2022-01-05T10:22:31 GMT">
+  <suite name="Suite" duration-ms="61230" started-at="2022-01-06T19:48:57 GMT" finished-at="2022-01-06T19:49:58 GMT">
     <groups>
     </groups>
-    <test name="Load Page Verify URL and Logo" duration-ms="29241" started-at="2022-01-05T10:22:02 GMT" finished-at="2022-01-05T10:22:31 GMT">
-      <class name="testcases.LoadPageVerifyURLAndLogo">
-        <test-method status="FAIL" signature="loadPageVerifyURLAndLogo(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoadPageVerifyURLAndLogo@416c58f5]" name="loadPageVerifyURLAndLogo" duration-ms="27228" started-at="2022-01-05T10:22:02 GMT" data-provider="dp1" finished-at="2022-01-05T10:22:29 GMT">
+    <test name="Load Page Verify URL and Logo" duration-ms="17398" started-at="2022-01-06T19:48:57 GMT" finished-at="2022-01-06T19:49:14 GMT">
+      <class name="testcases.LoadPageVerifyURLAndLogoTest">
+        <test-method status="PASS" signature="loadPageVerifyURLAndLogo(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoadPageVerifyURLAndLogoTest@5a2d131d]" name="loadPageVerifyURLAndLogo" duration-ms="16361" started-at="2022-01-06T19:48:57 GMT" data-provider="dp1" finished-at="2022-01-06T19:49:13 GMT">
           <params>
             <param index="0">
               <value>
@@ -20,40 +20,80 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.JavascriptException">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadPageVerifyURLAndLogo -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.LoadPageVerifyURLAndLogoTest@5a2d131d]" name="tearDown" is-config="true" duration-ms="920" started-at="2022-01-06T19:49:13 GMT" finished-at="2022-01-06T19:49:14 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.LoadPageVerifyURLAndLogoTest -->
+    </test> <!-- Load Page Verify URL and Logo -->
+    <test name="Page navigation" duration-ms="43142" started-at="2022-01-06T19:49:15 GMT" finished-at="2022-01-06T19:49:58 GMT">
+      <class name="testcases.MainMenuPageNavigationTest">
+        <test-method status="PASS" signature="pageNavigation(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.MainMenuPageNavigationTest@6bffbc6d]" name="pageNavigation" duration-ms="17991" started-at="2022-01-06T19:49:15 GMT" data-provider="dp1" finished-at="2022-01-06T19:49:33 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Smart Tech]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Smart Tech - Get the latest Smart Tech online here | Currys]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Smart Tech]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageNavigation -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.MainMenuPageNavigationTest@6bffbc6d]" name="tearDown" is-config="true" duration-ms="1102" started-at="2022-01-06T19:49:33 GMT" finished-at="2022-01-06T19:49:34 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="FAIL" signature="pageNavigation(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.MainMenuPageNavigationTest@6bffbc6d]" name="pageNavigation" duration-ms="22619" started-at="2022-01-06T19:49:34 GMT" data-provider="dp1" finished-at="2022-01-06T19:49:57 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Home & Outdoor]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Home & Outdoor Accessories | Currys]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[home and outdoor]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[javascript error: Invalid or unexpected token
-  (Session info: chrome=96.0.4664.110)
-Build info: version: '4.1.1', revision: 'e8fcc2cecf'
-System info: host: 'DESKTOP-11SJ4LJ', ip: '192.168.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [72c844fffd81b61287023dc5837113bb, executeScript {script=return arguments[0].complete && typeof arguments[0].naturalWidth != \"undefined\" && arguments[0].naturalWidth > 0, args=[{ELEMENT=717316a2-a351-4309-b29d-f3b5c3311d98, element-6066-11e4-a52e-4f735466cecf=717316a2-a351-4309-b29d-f3b5c3311d98}]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\KORAUH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54965}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54965/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 72c844fffd81b61287023dc5837113bb]]>
+              <![CDATA[null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.JavascriptException: javascript error: Invalid or unexpected token
-  (Session info: chrome=96.0.4664.110)
-Build info: version: '4.1.1', revision: 'e8fcc2cecf'
-System info: host: 'DESKTOP-11SJ4LJ', ip: '192.168.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [72c844fffd81b61287023dc5837113bb, executeScript {script=return arguments[0].complete && typeof arguments[0].naturalWidth != \"undefined\" && arguments[0].naturalWidth > 0, args=[{ELEMENT=717316a2-a351-4309-b29d-f3b5c3311d98, element-6066-11e4-a52e-4f735466cecf=717316a2-a351-4309-b29d-f3b5c3311d98}]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\KORAUH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54965}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54965/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 72c844fffd81b61287023dc5837113bb
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:477)
-at base.CurrysBase.verifyCurrysLogo(CurrysBase.java:25)
-at testcases.LoadPageVerifyURLAndLogo.loadPageVerifyURLAndLogo(LoadPageVerifyURLAndLogo.java:36)
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.fail(Assert.java:106)
+at testcases.MainMenuPageNavigationTest.pageItemTitleValidation(MainMenuPageNavigationTest.java:58)
+at testcases.MainMenuPageNavigationTest.pageNavigation(MainMenuPageNavigationTest.java:110)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -84,15 +124,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.JavascriptException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loadPageVerifyURLAndLogo -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.LoadPageVerifyURLAndLogo@416c58f5]" name="tearDown" is-config="true" duration-ms="1203" started-at="2022-01-05T10:22:30 GMT" finished-at="2022-01-05T10:22:31 GMT">
+        </test-method> <!-- pageNavigation -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.MainMenuPageNavigationTest@6bffbc6d]" name="tearDown" is-config="true" duration-ms="1015" started-at="2022-01-06T19:49:57 GMT" finished-at="2022-01-06T19:49:58 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testcases.LoadPageVerifyURLAndLogo -->
-    </test> <!-- Load Page Verify URL and Logo -->
+      </class> <!-- testcases.MainMenuPageNavigationTest -->
+    </test> <!-- Page navigation -->
   </suite> <!-- Suite -->
 </testng-results>

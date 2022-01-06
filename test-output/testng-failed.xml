@@ -4,14 +4,14 @@
   <listeners>
     <listener class-name="extentlisteners.ExtentListeners"/>
   </listeners>
-  <test thread-count="5" name="Load Page Verify URL and Logo(failed)">
+  <test thread-count="5" name="Page navigation(failed)">
     <classes>
-      <class name="testcases.LoadPageVerifyURLAndLogo">
+      <class name="testcases.MainMenuPageNavigationTest">
         <methods>
+          <include name="pageNavigation" invocation-numbers="1"/>
           <include name="tearDown"/>
-          <include name="loadPageVerifyURLAndLogo" invocation-numbers="0"/>
         </methods>
-      </class> <!-- testcases.LoadPageVerifyURLAndLogo -->
+      </class> <!-- testcases.MainMenuPageNavigationTest -->
     </classes>
-  </test> <!-- Load Page Verify URL and Logo(failed) -->
+  </test> <!-- Page navigation(failed) -->
 </suite> <!-- Failed suite [Suite] -->

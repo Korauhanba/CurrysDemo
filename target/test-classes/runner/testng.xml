@@ -7,10 +7,16 @@
 		<listener class-name="extentlisteners.ExtentListeners"></listener>
 	</listeners>
 
-	<test name="Load Page Verify URL and Logo">
+    <test name="Load Page Verify URL and Logo">
 		<classes>
-			<class name="testcases.LoadPageVerifyURLAndLogo" />
+			<class name="testcases.LoadPageVerifyURLAndLogoTest" />
 		</classes>
-	</test> <!-- Test -->
-	
+	</test>
+
+	<test name="Page navigation">
+		<classes>
+			<class name="testcases.MainMenuPageNavigationTest" />
+		</classes>
+	</test>
+
 </suite> <!-- Suite -->
