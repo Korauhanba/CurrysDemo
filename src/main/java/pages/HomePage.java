@@ -1,10 +1,18 @@
 package pages;
 
+import java.util.List;
+
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+import org.testng.Assert;
+
+import com.aventstack.extentreports.Status;
 
 import base.BasePage;
+import extentlisteners.ExtentListeners;
 
 public class HomePage extends BasePage {
 
@@ -12,18 +20,24 @@ public class HomePage extends BasePage {
 		super(driver);
 		// TODO Auto-generated constructor stub
 	}
-
-	@FindBy(id = "onetrust-banner-sdk")
-	public WebElement cookiesBanner;
-
-	@FindBy(xpath = "//button[@id='onetrust-accept-btn-handler']")
-	public WebElement acceptAllCookiesBtn;
-
+	
 	@FindBy(linkText = "Appliances")
 	public WebElement appliances;
+	
+	@FindBy(linkText = "Washing machines")
+	public WebElement washingMachines;
+	
+	@FindBy(linkText = "Kettles")
+	public WebElement kettles;
 
 	@FindBy(linkText = "TV & Audio")
 	public WebElement tvAudio;
+	
+	@FindBy(linkText = "TV wall brackets")
+	public WebElement tvWallBrackets;
+	
+	@FindBy(linkText = "Soundbars")
+	public WebElement soundbars;
 
 	@FindBy(linkText = "Computing")
 	public WebElement computing;
@@ -45,25 +59,28 @@ public class HomePage extends BasePage {
 
 	@FindBy(linkText = "Home & Outdoor")
 	public WebElement homeOutdoor;
-
-	// Method to accept user privacy settings if displayed
-	public void acceptPrivacySettings() {
-
-		if (cookiesBanner.isDisplayed()) {
-
-			acceptAllCookiesBtn.click();
-
-		}
-
-	}
-
-	// Method to accept privacy settings on first time page load
-	public String getURLOnPageLoad() {
-
-		return driver.getCurrentUrl();
-
-	}
-
+	
+	@FindBy(linkText = "Track your order")
+	public WebElement trackYourOrder;
+	
+	@FindBy(xpath = "//*[@name='search-field']")
+	public WebElement searchField;
+	
+	@FindBy(xpath = "//button[@type='submit']")
+	public WebElement searchBtn;
+	
+	@FindBy(xpath = "(//*[@class='LinkItem__Label-lgtfuY cbWWDQ'])[1]")
+	public WebElement stores;
+	
+	@FindBy(linkText = "Currys Business")
+	public WebElement currysBusinessLink;
+	
+	@FindBy(linkText = "Currys Ireland")
+	public WebElement currysIrelandLink;
+	
+	@FindBy(linkText = "Partmaster")
+	public WebElement partmasterLink;
+	
 	// Method to navigate to Appliances page
 	public AppliancesPage goToAppliancesPage() {
 
@@ -129,5 +146,135 @@ public class HomePage extends BasePage {
 		return new HomeOutdoorPage(driver);
 
 	}
+	
+	public ItemsDisplayPage goToItemsDisplayPage(String menuName, String productName) {
+		
+		Actions action = new Actions(driver);
+		
+		if(menuName.equals("Appliances")) {
+			
+			action.moveToElement(appliances).perform();
+			
+			if(productName.equals("Washing machines")) {
+					
+				try {
+					String prodLink = washingMachines.getText();
+					washingMachines.click();
+					ExtentListeners.test.log(Status.INFO, "Clicked on the product: " +prodLink);
+					
+				}catch(Throwable t) {
+					
+					ExtentListeners.test.log(Status.FAIL, t.getMessage());
+					Assert.fail();
+				}
+				
+			}else if(productName.equals("Kettles")) {
+				
+				try {
+					String prodLink = kettles.getText();
+					kettles.click();
+					ExtentListeners.test.log(Status.INFO, "Clicked on the product: " +prodLink);
+					
+				}catch(Throwable t) {
+					
+					ExtentListeners.test.log(Status.FAIL, t.getMessage());
+					Assert.fail();
+				}
+				
+			}
+			
+		}else if(menuName.equals("TV & Audio")) {
+			
+			action.moveToElement(tvAudio).perform();
+			
+			if(productName.equals("TV wall brackets")) {
+				
+				try {
+					String prodLink = tvWallBrackets.getText();
+					tvWallBrackets.click();
+					ExtentListeners.test.log(Status.INFO, "Clicked on the product: " +prodLink);
+					
+				}catch(Throwable t) {
+					
+					ExtentListeners.test.log(Status.FAIL, t.getMessage());
+					Assert.fail();
+				}
 
+				
+			}else if(productName.equals("Soundbars")) {
+				
+				try {
+					String prodLink = soundbars.getText();
+					soundbars.click();
+					ExtentListeners.test.log(Status.INFO, "Clicked on the product: " +prodLink);
+					
+				}catch(Throwable t) {
+					
+					ExtentListeners.test.log(Status.FAIL, t.getMessage());
+					Assert.fail();
+				}
+				
+			}
+			
+		}
+		
+		return new ItemsDisplayPage(driver);
+		
+	}
+	
+	public TrackMyOrderPage gotoTrackMyOrderPage() {
+		
+		trackYourOrder.click();		
+		return new TrackMyOrderPage(driver);
+		
+	}
+
+	public void searchProduct(String searchData) {
+		
+		System.out.println("a");
+		searchField.sendKeys(searchData);
+		System.out.println("b");
+		searchBtn.click();
+		System.out.println("c");
+		
+		/*for(WebElement suggestionPopUpValue: suggestionPopUpList) {
+			
+			if(suggestionPopUpValue.getText().equals(suggestedValue)) {
+				
+				suggestionPopUpValue.click();
+				
+			}*/
+			
+	}
+	
+	public ItemsDisplayPage goToItemsDisplayPageViaSearch() {	
+		
+		return new ItemsDisplayPage(driver);
+	}
+	
+	public CurrysStoreFinderPage goToCurrysStoreFinderPage() {
+		
+		stores.click();
+		return new CurrysStoreFinderPage(driver);
+		
+	}
+	
+	public void navigateToOtherCurrysWebsite(String website) {
+		
+		if(website.equals("Currys Business")) {
+			
+			currysBusinessLink.click();
+			
+		}else if(website.equals("Currys Ireland")) {
+			
+			currysIrelandLink.click();
+			
+		}else if(website.equals("Partmaster")) {
+			
+			partmasterLink.click();
+			
+		}
+		
+	}
+	
 }

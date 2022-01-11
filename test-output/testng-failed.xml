@@ -4,14 +4,14 @@
   <listeners>
     <listener class-name="extentlisteners.ExtentListeners"/>
   </listeners>
-  <test thread-count="5" name="Page navigation(failed)">
+  <test thread-count="5" name="Currys Store Finder(failed)">
     <classes>
-      <class name="testcases.MainMenuPageNavigationTest">
+      <class name="testcases.CurrysStoreFinderTest">
         <methods>
-          <include name="pageNavigation" invocation-numbers="1"/>
           <include name="tearDown"/>
+          <include name="currysStoreFinder" invocation-numbers="1"/>
         </methods>
-      </class> <!-- testcases.MainMenuPageNavigationTest -->
+      </class> <!-- testcases.CurrysStoreFinderTest -->
     </classes>
-  </test> <!-- Page navigation(failed) -->
+  </test> <!-- Currys Store Finder(failed) -->
 </suite> <!-- Failed suite [Suite] -->

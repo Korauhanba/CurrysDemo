@@ -67,7 +67,7 @@ public class MainMenuPageNavigationTest extends BaseTest {
 		setUp(browserName);
 		
 		HomePage homePage = new HomePage(driver);
-		homePage.acceptPrivacySettings();
+		BasePage.currysBase.acceptPrivacySettings();
 		
 		if(itemName.equals("Appliances")) {
 			

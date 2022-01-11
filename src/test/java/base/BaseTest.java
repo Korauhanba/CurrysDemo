@@ -104,7 +104,7 @@ public class BaseTest {
 		
 		try {
 			DbManager.setMysqlDbConnection();
-			log.info("DB connection establised !!");
+			log.info("DB connection established !!");
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

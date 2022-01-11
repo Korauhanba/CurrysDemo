@@ -19,10 +19,10 @@ public class LoadPageVerifyURLAndLogoTest extends BaseTest{
 		setUp(browserName);
 		
 		HomePage homePage = new HomePage(driver);
-		homePage.acceptPrivacySettings();
+		BasePage.currysBase.acceptPrivacySettings();
 	
 		// Retrieve the URL on page load and verify it
-		String currentURL = homePage.getURLOnPageLoad();
+		String currentURL = BasePage.currysBase.getURLOnPageLoad();
 		
 		try {
 			Assert.assertEquals(currentURL, pageLoadURL);

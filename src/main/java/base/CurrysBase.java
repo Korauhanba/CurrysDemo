@@ -29,6 +29,12 @@ public class CurrysBase {
 	@FindBy(xpath = "//*[text()='Mobile Phones']")
 	public WebElement mobileTitle;
 	
+	@FindBy(id = "onetrust-banner-sdk")
+	public WebElement cookiesBanner;
+
+	@FindBy(xpath = "//button[@id='onetrust-accept-btn-handler']")
+	public WebElement acceptAllCookiesBtn;
+	
 	// Method to verify the display of the Currys logo
 	public void verifyCurrysLogo() {
 		
@@ -96,5 +102,25 @@ public class CurrysBase {
 		return mobileTitle.getText();
 		
 	}
+
+	// Method to accept user privacy settings if displayed
+	public void acceptPrivacySettings() {
+
+		if (cookiesBanner.isDisplayed()) {
+
+			acceptAllCookiesBtn.click();
+
+		}
+
+	}
+
+	// Method to accept privacy settings on first time page load
+	public String getURLOnPageLoad() {
+
+		return driver.getCurrentUrl();
+
+	}
+
+
 
 }

@@ -7,16 +7,42 @@
 		<listener class-name="extentlisteners.ExtentListeners"></listener>
 	</listeners>
 
-    <test name="Load Page Verify URL and Logo">
+	<!-- <test name="Load Page Verify URL and Logo"> 
+	<classes> <class name="testcases.LoadPageVerifyURLAndLogoTest" 
+		/> </classes> 
+		
+		</test> 
+		
+		<test name="Page navigation"> <classes> 
+		<class name="testcases.MainMenuPageNavigationTest" /> 
+		</classes> 
+		</test> -->
+
+	<!-- <test name="Add Product to Basket"> 
+	<classes> <class name="testcases.AddProductToBasketTest" /> 
+		</classes> </test> -->
+
+	<!-- <test name="Track order to be delivered today"> <classes> <class name="testcases.TrackTodayOrderDeliveryTest" 
+		/> </classes> </test> -->
+
+<!-- 	<test name="Search product">
 		<classes>
-			<class name="testcases.LoadPageVerifyURLAndLogoTest" />
+			<class name="testcases.SearchProductTest" />
+		</classes>
+	</test> -->
+	
+<!-- 		<test name="Currys Store Finder">
+		<classes>
+			<class name="testcases.CurrysStoreFinderTest" />
+		</classes>
+	</test> -->
+	
+	<test name="Other Currys Website Navigation">
+		<classes>
+			<class name="testcases.OtherCurrysWebsiteNavigationTest" />
 		</classes>
 	</test>
 
-	<test name="Page navigation">
-		<classes>
-			<class name="testcases.MainMenuPageNavigationTest" />
-		</classes>
-	</test>
+
 
 </suite> <!-- Suite -->

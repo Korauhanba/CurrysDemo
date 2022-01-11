@@ -1,7 +1,2 @@
-INFO    2022-01-06 19:49:34,766 [main] com.fasterxml.jackson.databind.deser.Deserializers$Base  - Config properties loaded !!
-INFO    2022-01-06 19:49:34,766 [main] com.fasterxml.jackson.databind.deser.Deserializers$Base  - OR properties loaded !!
-INFO    2022-01-06 19:49:36,807 [main] com.fasterxml.jackson.databind.deser.Deserializers$Base  - Launching Chrome !!
-INFO    2022-01-06 19:49:42,249 [main] com.fasterxml.jackson.databind.deser.Deserializers$Base  - Navigating to url: https://www.currys.co.uk/
-INFO    2022-01-06 19:49:46,960 [main] com.fasterxml.jackson.databind.deser.Deserializers$Base  - DB connection establised !!
-INFO    2022-01-06 19:49:57,381 [main] com.fasterxml.jackson.databind.deser.Deserializers$Base  - Navigation to Home & Outdoor page failed.
-INFO    2022-01-06 19:49:58,715 [main] com.fasterxml.jackson.databind.deser.Deserializers$Base  - Test Execution completed
+INFO    2022-01-11 04:18:20,216 [main] com.fasterxml.jackson.databind.deser.Deserializers$Base  - Config properties loaded !!
+INFO    2022-01-11 04:18:20,217 [main] com.fasterxml.jackson.databind.deser.Deserializers$Base  - OR properties loaded !!
