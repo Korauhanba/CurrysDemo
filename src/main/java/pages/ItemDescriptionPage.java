@@ -23,15 +23,11 @@ public class ItemDescriptionPage extends BasePage {
 	@FindBy(xpath = "//div[@id='product-actions']//button[@class='Button__StyledButton-iESSlv eyLozJ Button-dtUzzq sc-jfJzZe kHUYTy gdsrAv'][normalize-space()='Add to basket']")
 	public WebElement addToBasketBtn;
 
-	//@FindBy(xpath = "//*[@class='sc-XhUPp kiNLFp']")
 	@FindBy(xpath = "//*[text()='This item has been added to your basket']")
 	public WebElement itemAddedSuccessMsg;
 
 	@FindBy(xpath = "//*[@class='sc-biBrSq fdmElq']")
 	public WebElement itemNameOnSuccessMsg;
-
-	// @FindBy(xpath = "//*[@data-component='Link']")
-	// public WebElement continueWithoutInstantReplacementBtn;
 
 	@FindBy(xpath = "//div[@data-component='CSAPopin']")
 	public WebElement careAndRepairPopUp;
