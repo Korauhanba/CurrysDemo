@@ -7,11 +7,11 @@
 		<listener class-name="extentlisteners.ExtentListeners"></listener>
 	</listeners>
 
-	<test name="TS001_TC001_Currys URL and logo">
+<!-- 	<test name="TS001_TC001_Currys URL and logo">
 		<classes>
 			<class name="testcases.TS001TC001CurrysURLAndLogoTest" />
 		</classes>
-	</test>
+	</test> -->
 
 	<test name="TS002_TC001_Search available items">
 		<classes>
