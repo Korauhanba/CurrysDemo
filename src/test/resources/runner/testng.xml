@@ -3,46 +3,59 @@
 
 <suite name="Suite">
 
-	<listeners>
+ 	<listeners>
 		<listener class-name="extentlisteners.ExtentListeners"></listener>
 	</listeners>
 
-	<!-- <test name="Load Page Verify URL and Logo"> 
-	<classes> <class name="testcases.LoadPageVerifyURLAndLogoTest" 
-		/> </classes> 
-		
-		</test> 
-		
-		<test name="Page navigation"> <classes> 
-		<class name="testcases.MainMenuPageNavigationTest" /> 
-		</classes> 
-		</test> -->
-
-	<!-- <test name="Add Product to Basket"> 
-	<classes> <class name="testcases.AddProductToBasketTest" /> 
-		</classes> </test> -->
-
-	<!-- <test name="Track order to be delivered today"> <classes> <class name="testcases.TrackTodayOrderDeliveryTest" 
-		/> </classes> </test> -->
-
-<!-- 	<test name="Search product">
+	<!-- <test name="TS001_TC001_Currys URL and logo">
 		<classes>
-			<class name="testcases.SearchProductTest" />
-		</classes>
-	</test> -->
-	
-<!-- 		<test name="Currys Store Finder">
-		<classes>
-			<class name="testcases.CurrysStoreFinderTest" />
-		</classes>
-	</test> -->
-	
-	<test name="Other Currys Website Navigation">
-		<classes>
-			<class name="testcases.OtherCurrysWebsiteNavigationTest" />
+			<class name="testcases.TS001TC001CurrysURLAndLogoTest" />
 		</classes>
 	</test>
 
+	<test name="TS002_TC001_Search available items">
+		<classes>
+			<class name="testcases.TS002TC001SearchAvailableItemsTest" />
+		</classes>
+	</test>
 
+	<test name="TS002_TC002_Search invalid items">
+		<classes>
+			<class name="testcases.TS002TC002SearchInvalidItemsTest" />
+		</classes>
+	</test>
 
-</suite> <!-- Suite -->
+	<test name="TS003_TC001_Navigation to main menu product page">
+		<classes>
+			<class
+				name="testcases.TS003TC001NavigationToMainMenuProductTest" />
+		</classes>
+	</test> -->
+
+	<test name="TS004_TC001_Add items to Product Basket">
+		<classes>
+			<class name="testcases.TS004TC001AddItemsToProductBasketTest" />
+		</classes>
+	</test>
+
+	<!-- <test name="TS005_TC001_Track your order to be delivered today">
+		<classes>
+			<class
+				name="testcases.TS005TC001TrackYourOrderDeliveryTodayTest" />
+		</classes>
+	</test>
+
+	<test name="TS006_TC001_Find a store">
+		<classes>
+			<class name="testcases.TS006TC001FindAStoreTest" />
+		</classes>
+	</test>
+
+	<test name="TC007_TC001_Navigation to other Currys website">
+		<classes>
+			<class
+				name="testcases.TC007TC001NavigationToOtherCurrysWebsiteTest" />
+		</classes>
+	</test> -->
+
+</suite> 

@@ -4,7 +4,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import com.aventstack.extentreports.Status;
+
 import base.BasePage;
+import extentlisteners.ExtentListeners;
 
 public class CurrysStoreFinderPage extends BasePage{
 
@@ -21,9 +24,13 @@ public class CurrysStoreFinderPage extends BasePage{
 	
 	public CurrysStoreDisplayPage goToCurrysStoreDisplayPage(String townPostcode){
 		
-		townPostcodeField.sendKeys(townPostcode);
-		searchBtn.click();
-		
+		try {
+			townPostcodeField.sendKeys(townPostcode);
+			searchBtn.click();
+		}catch(Throwable t) {
+			ExtentListeners.test.log(Status.FAIL, t.getMessage());
+		}
+
 		return new CurrysStoreDisplayPage(driver);
 		
 	}

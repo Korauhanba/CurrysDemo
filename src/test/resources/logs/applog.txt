@@ -1,2 +1,6 @@
-INFO    2022-01-11 04:18:20,216 [main] com.fasterxml.jackson.databind.deser.Deserializers$Base  - Config properties loaded !!
-INFO    2022-01-11 04:18:20,217 [main] com.fasterxml.jackson.databind.deser.Deserializers$Base  - OR properties loaded !!
+INFO    2022-01-13 11:30:06,936 [main] com.fasterxml.jackson.databind.deser.Deserializers$Base  - Config properties loaded !!
+INFO    2022-01-13 11:30:06,937 [main] com.fasterxml.jackson.databind.deser.Deserializers$Base  - OR properties loaded !!
+INFO    2022-01-13 11:30:09,294 [main] com.fasterxml.jackson.databind.deser.Deserializers$Base  - Launching Edge !!
+INFO    2022-01-13 11:30:15,270 [main] com.fasterxml.jackson.databind.deser.Deserializers$Base  - Navigating to url: https://www.currys.co.uk/
+INFO    2022-01-13 11:30:20,077 [main] com.fasterxml.jackson.databind.deser.Deserializers$Base  - DB connection established !!
+INFO    2022-01-13 11:30:33,993 [main] com.fasterxml.jackson.databind.deser.Deserializers$Base  - Test Execution completed

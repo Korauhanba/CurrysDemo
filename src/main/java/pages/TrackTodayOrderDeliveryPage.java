@@ -39,37 +39,40 @@ public class TrackTodayOrderDeliveryPage extends BasePage {
 
 	public void trackTodayOrderDelivery(String jobRepairRef, String searchByType, String searchByData, String countryName) {
 
-		jobRepairRefField.sendKeys(jobRepairRef);
-		ExtentListeners.test.log(Status.INFO, "Value entered in Job Ref / Repair Ref field: " + jobRepairRef);
-
+		try {
+			jobRepairRefField.sendKeys(jobRepairRef);
+			ExtentListeners.test.log(Status.INFO, "Value entered in Job Ref / Repair Ref field: " + jobRepairRef);
+		}catch(Throwable t) {
+			ExtentListeners.test.log(Status.FAIL, t.getMessage());
+		}
+		
 		if (countryName.equals("United Kingdom")) {
 
-			ukRadioBtn.click();
-
-			if (searchByType.equals("Postcode")) {
-
-				postCodeBtn.click();
-
-			} else if (searchByType.equals("Contact Number")) {
-
-				contactNumBtn.click();
-
+			try {
+				ukRadioBtn.click();
+				if (searchByType.equals("Postcode")) {
+					postCodeBtn.click();
+				} else if (searchByType.equals("Contact Number")) {
+					contactNumBtn.click();
+				}
+				searchByField.sendKeys(searchByData);
+			}catch(Throwable t) {
+				ExtentListeners.test.log(Status.FAIL, t.getMessage());
 			}
-
-			searchByField.sendKeys(searchByData);
+			
 
 		} else if (countryName.equals("Republic of Ireland")) {
 
-			roiRadioBtn.click();
-
-			if (searchByType.equals("Contact Number")) {
-
-				contactNumBtn.click();
-
+			try {
+				roiRadioBtn.click();
+				if (searchByType.equals("Contact Number")) {
+					contactNumBtn.click();
+				}
+				searchByField.sendKeys(searchByData);
+			}catch(Throwable t) {
+				ExtentListeners.test.log(Status.FAIL, t.getMessage());
 			}
-
-			searchByField.sendKeys(searchByData);
-
+	
 		}
 
 		ExtentListeners.test.log(Status.INFO,

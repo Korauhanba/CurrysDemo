@@ -1,13 +1,9 @@
 package pages;
 
-import java.util.List;
-
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
-import org.testng.Assert;
 
 import com.aventstack.extentreports.Status;
 
@@ -20,22 +16,22 @@ public class HomePage extends BasePage {
 		super(driver);
 		// TODO Auto-generated constructor stub
 	}
-	
+
 	@FindBy(linkText = "Appliances")
 	public WebElement appliances;
-	
+
 	@FindBy(linkText = "Washing machines")
 	public WebElement washingMachines;
-	
+
 	@FindBy(linkText = "Kettles")
 	public WebElement kettles;
 
 	@FindBy(linkText = "TV & Audio")
 	public WebElement tvAudio;
-	
+
 	@FindBy(linkText = "TV wall brackets")
 	public WebElement tvWallBrackets;
-	
+
 	@FindBy(linkText = "Soundbars")
 	public WebElement soundbars;
 
@@ -59,32 +55,37 @@ public class HomePage extends BasePage {
 
 	@FindBy(linkText = "Home & Outdoor")
 	public WebElement homeOutdoor;
-	
+
 	@FindBy(linkText = "Track your order")
 	public WebElement trackYourOrder;
-	
+
 	@FindBy(xpath = "//*[@name='search-field']")
 	public WebElement searchField;
-	
+
 	@FindBy(xpath = "//button[@type='submit']")
 	public WebElement searchBtn;
-	
+
 	@FindBy(xpath = "(//*[@class='LinkItem__Label-lgtfuY cbWWDQ'])[1]")
 	public WebElement stores;
-	
+
 	@FindBy(linkText = "Currys Business")
 	public WebElement currysBusinessLink;
-	
+
 	@FindBy(linkText = "Currys Ireland")
 	public WebElement currysIrelandLink;
-	
+
 	@FindBy(linkText = "Partmaster")
 	public WebElement partmasterLink;
-	
+
 	// Method to navigate to Appliances page
 	public AppliancesPage goToAppliancesPage() {
 
-		appliances.click();
+		try {
+			appliances.click();
+		} catch (Throwable t) {
+			ExtentListeners.test.log(Status.FAIL, t.getMessage());
+		}
+
 		return new AppliancesPage(driver);
 
 	}
@@ -92,14 +93,24 @@ public class HomePage extends BasePage {
 	// Method to navigate to TV & Audio page
 	public TVAudioPage goToTVAudioPage() {
 
-		tvAudio.click();
+		try {
+			tvAudio.click();
+		} catch (Throwable t) {
+			ExtentListeners.test.log(Status.FAIL, t.getMessage());
+		}
+
 		return new TVAudioPage(driver);
 	}
 
 	// Method to navigate to Computing page
 	public ComputingPage goToComputingPage() {
 
-		computing.click();
+		try {
+			computing.click();
+		} catch (Throwable t) {
+			ExtentListeners.test.log(Status.FAIL, t.getMessage());
+		}
+
 		return new ComputingPage(driver);
 
 	}
@@ -107,7 +118,12 @@ public class HomePage extends BasePage {
 	// Method to navigate to Gaming page
 	public GamingPage goToGamingPage() {
 
-		gaming.click();
+		try {
+			gaming.click();
+		} catch (Throwable t) {
+			ExtentListeners.test.log(Status.FAIL, t.getMessage());
+		}
+
 		return new GamingPage(driver);
 
 	}
@@ -115,7 +131,12 @@ public class HomePage extends BasePage {
 	// Method to navigate to Cameras page
 	public CamerasPage goToCamerasPage() {
 
-		cameras.click();
+		try {
+			cameras.click();
+		} catch (Throwable t) {
+			ExtentListeners.test.log(Status.FAIL, t.getMessage());
+		}
+
 		return new CamerasPage(driver);
 
 	}
@@ -123,9 +144,12 @@ public class HomePage extends BasePage {
 	// Method to navigate to Phones page
 	public PhonesPage goToPhonesPage() {
 
-		phones.click();
-
-		visitMobilePageBtn.click();
+		try {
+			phones.click();
+			visitMobilePageBtn.click();
+		} catch (Throwable t) {
+			ExtentListeners.test.log(Status.FAIL, t.getMessage());
+		}
 
 		return new PhonesPage(driver);
 
@@ -134,7 +158,12 @@ public class HomePage extends BasePage {
 	// Method to navigate to SmartTech page
 	public SmartTechPage goToSmartTechPage() {
 
-		smartTech.click();
+		try {
+			smartTech.click();
+		} catch (Throwable t) {
+			ExtentListeners.test.log(Status.FAIL, t.getMessage());
+		}
+
 		return new SmartTechPage(driver);
 
 	}
@@ -142,139 +171,137 @@ public class HomePage extends BasePage {
 	// Method to navigate to HomeOutdoor page
 	public HomeOutdoorPage goToHomeOutdoorPage() {
 
-		homeOutdoor.click();
+		try {
+			homeOutdoor.click();
+		} catch (Throwable t) {
+			ExtentListeners.test.log(Status.FAIL, t.getMessage());
+		}
+
 		return new HomeOutdoorPage(driver);
 
 	}
-	
+
+	// Method to navigate to the Items display page via the menu and sub-menu
+	// Few menus and test menu's has been
 	public ItemsDisplayPage goToItemsDisplayPage(String menuName, String productName) {
-		
+
 		Actions action = new Actions(driver);
-		
-		if(menuName.equals("Appliances")) {
-			
-			action.moveToElement(appliances).perform();
-			
-			if(productName.equals("Washing machines")) {
-					
-				try {
+
+		try {
+			if (menuName.equals("Appliances")) {
+
+				action.moveToElement(appliances).perform();
+
+				if (productName.equals("Washing machines")) {
+
 					String prodLink = washingMachines.getText();
 					washingMachines.click();
-					ExtentListeners.test.log(Status.INFO, "Clicked on the product: " +prodLink);
-					
-				}catch(Throwable t) {
-					
-					ExtentListeners.test.log(Status.FAIL, t.getMessage());
-					Assert.fail();
-				}
-				
-			}else if(productName.equals("Kettles")) {
-				
-				try {
+					ExtentListeners.test.log(Status.INFO, "Clicked on the product: " + prodLink);
+
+				} else if (productName.equals("Kettles")) {
+
 					String prodLink = kettles.getText();
 					kettles.click();
-					ExtentListeners.test.log(Status.INFO, "Clicked on the product: " +prodLink);
-					
-				}catch(Throwable t) {
-					
-					ExtentListeners.test.log(Status.FAIL, t.getMessage());
-					Assert.fail();
+					ExtentListeners.test.log(Status.INFO, "Clicked on the product: " + prodLink);
+
 				}
-				
-			}
-			
-		}else if(menuName.equals("TV & Audio")) {
-			
-			action.moveToElement(tvAudio).perform();
-			
-			if(productName.equals("TV wall brackets")) {
-				
-				try {
+
+			} else if (menuName.equals("TV & Audio")) {
+
+				action.moveToElement(tvAudio).perform();
+
+				if (productName.equals("TV wall brackets")) {
+
 					String prodLink = tvWallBrackets.getText();
 					tvWallBrackets.click();
-					ExtentListeners.test.log(Status.INFO, "Clicked on the product: " +prodLink);
-					
-				}catch(Throwable t) {
-					
-					ExtentListeners.test.log(Status.FAIL, t.getMessage());
-					Assert.fail();
-				}
+					ExtentListeners.test.log(Status.INFO, "Clicked on the product: " + prodLink);
 
-				
-			}else if(productName.equals("Soundbars")) {
-				
-				try {
+				} else if (productName.equals("Soundbars")) {
+
 					String prodLink = soundbars.getText();
 					soundbars.click();
-					ExtentListeners.test.log(Status.INFO, "Clicked on the product: " +prodLink);
-					
-				}catch(Throwable t) {
-					
-					ExtentListeners.test.log(Status.FAIL, t.getMessage());
-					Assert.fail();
+					ExtentListeners.test.log(Status.INFO, "Clicked on the product: " + prodLink);
+
 				}
-				
 			}
-			
+
+		} catch (Throwable t) {
+			ExtentListeners.test.log(Status.INFO, t.getMessage());
 		}
-		
+
 		return new ItemsDisplayPage(driver);
-		
-	}
-	
-	public TrackMyOrderPage gotoTrackMyOrderPage() {
-		
-		trackYourOrder.click();		
-		return new TrackMyOrderPage(driver);
-		
+
 	}
 
-	public void searchProduct(String searchData) {
-		
-		System.out.println("a");
-		searchField.sendKeys(searchData);
-		System.out.println("b");
-		searchBtn.click();
-		System.out.println("c");
-		
-		/*for(WebElement suggestionPopUpValue: suggestionPopUpList) {
-			
-			if(suggestionPopUpValue.getText().equals(suggestedValue)) {
-				
-				suggestionPopUpValue.click();
-				
-			}*/
-			
+	public TrackMyOrderPage gotoTrackMyOrderPage() {
+
+		try {
+			trackYourOrder.click();
+		} catch (Throwable t) {
+			ExtentListeners.test.log(Status.FAIL, t.getMessage());
+		}
+
+		return new TrackMyOrderPage(driver);
+
 	}
-	
-	public ItemsDisplayPage goToItemsDisplayPageViaSearch() {	
-		
+
+	// Method to search product by entering data in the search field
+	public void searchProduct(String searchData) {
+
+		try {
+			searchField.sendKeys(searchData);
+			searchBtn.click();
+		} catch (Throwable t) {
+			ExtentListeners.test.log(Status.FAIL, t.getMessage());
+		}
+
+	}
+
+	public ItemsDisplayPage goToItemsDisplayPageViaSearch() {
+
 		return new ItemsDisplayPage(driver);
 	}
-	
+
 	public CurrysStoreFinderPage goToCurrysStoreFinderPage() {
-		
-		stores.click();
-		return new CurrysStoreFinderPage(driver);
-		
-	}
-	
-	public void navigateToOtherCurrysWebsite(String website) {
-		
-		if(website.equals("Currys Business")) {
-			
-			currysBusinessLink.click();
-			
-		}else if(website.equals("Currys Ireland")) {
-			
-			currysIrelandLink.click();
-			
-		}else if(website.equals("Partmaster")) {
-			
-			partmasterLink.click();
-			
+
+		try {
+			stores.click();
+		} catch (Throwable t) {
+			ExtentListeners.test.log(Status.FAIL, t.getMessage());
 		}
-		
+
+		return new CurrysStoreFinderPage(driver);
+
 	}
-	
+
+	public void navigateToOtherCurrysWebsite(String website) {
+
+		if (website.equals("Currys Business")) {
+
+			try {
+				currysBusinessLink.click();
+			} catch (Throwable t) {
+				ExtentListeners.test.log(Status.FAIL, t.getMessage());
+			}
+
+		} else if (website.equals("Currys Ireland")) {
+
+			try {
+				currysIrelandLink.click();
+			} catch (Throwable t) {
+				ExtentListeners.test.log(Status.FAIL, t.getMessage());
+			}
+
+		} else if (website.equals("Partmaster")) {
+
+			try {
+				partmasterLink.click();
+			} catch (Throwable t) {
+				ExtentListeners.test.log(Status.FAIL, t.getMessage());
+			}
+
+		}
+
+	}
+
 }

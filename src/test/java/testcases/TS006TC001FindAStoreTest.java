@@ -13,20 +13,26 @@ import pages.CurrysStoreFinderPage;
 import pages.HomePage;
 import utilities.DataUtil;
 
-public class CurrysStoreFinderTest extends BaseTest{
+public class TS006TC001FindAStoreTest extends BaseTest{
 	
+	// Test to find a Currys physical store
 	@Test(dataProviderClass = DataUtil.class, dataProvider = "dp1")
 	public void currysStoreFinder(String browser, String townPostcode, String expStore) {
 		
+		// Loading the set up for test run
 		setUp(browser);
-		
+
+		// Webdriver instance
 		HomePage homePage = new HomePage(driver);
+		// Accept privacy settings displayed on url load
 		BasePage.currysBase.acceptPrivacySettings();
 		
+		// Navigate to Currys Store Finder Page, enter town / postcode and search the store
 		CurrysStoreFinderPage currysStoreFinderPage = homePage.goToCurrysStoreFinderPage();
 		CurrysStoreDisplayPage currysStoreDisplayPage = currysStoreFinderPage.goToCurrysStoreDisplayPage(townPostcode);
 		String nearestStore = currysStoreDisplayPage.getNearestStore();
 		
+		// Validate the display of the nearest store based on the search
 		try {
 			Assert.assertEquals(nearestStore, expStore);
 			log.info("Town/Postcode: " +townPostcode+ ". Nearest store: " +nearestStore);

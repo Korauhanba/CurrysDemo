@@ -12,11 +12,13 @@ import extentlisteners.ExtentListeners;
 import pages.HomePage;
 import utilities.DataUtil;
 
-public class MainMenuPageNavigationTest extends BaseTest {
+//TS003_TC001_Navigation to main menu product page
+public class TS003TC001NavigationToMainMenuProductTest extends BaseTest {
 	
 	String actPageTitle, actItemTitle;
 	SoftAssert softAssert = new SoftAssert();
 	
+	// Method to validate the item title on the page
 	public void pageItemTitleValidation(String itemName, String expPageTitle, String expItemTitle){
 		
 		try {
@@ -61,14 +63,19 @@ public class MainMenuPageNavigationTest extends BaseTest {
 		
 	}
 
+	// Verify the successful navigation to a product page via the main menu
 	@Test(dataProviderClass = DataUtil.class, dataProvider = "dp1")
-	public void pageNavigation(String browserName, String itemName, String expPageTitle, String expItemTitle) {
+	public void pageNavigation(String browser, String itemName, String expPageTitle, String expItemTitle) {
 		
-		setUp(browserName);
-		
+		// Loading the set up for test run
+		setUp(browser);
+
+		// Webdriver instance
 		HomePage homePage = new HomePage(driver);
+		// Accept privacy settings displayed on url load
 		BasePage.currysBase.acceptPrivacySettings();
 		
+		// Navigation to a product page via the main menu
 		if(itemName.equals("Appliances")) {
 			
 			homePage.goToAppliancesPage();

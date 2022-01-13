@@ -13,19 +13,25 @@ import pages.ItemDescriptionPage;
 import pages.ItemsDisplayPage;
 import utilities.DataUtil;
 
-public class AddProductToBasketTest extends BaseTest {
+//TS004_TC001_Add items to Product Basket
+public class TS004TC001AddItemsToProductBasketTest extends BaseTest {
 
+	//Verify that an item can be added to the product basket
 	@Test(dataProviderClass = DataUtil.class, dataProvider = "dp1")
 	public void addProductToBasket(String browser, String menuName, String prodName, String expProdTitle,
 			String expItemBrand, String expItemName, String expItemBasketAddSuccessMsg) {
 		
+		// Loading the set up for test run
 		setUp(browser);
 
+		// Webdriver instance
 		HomePage homePage = new HomePage(driver);
+		// Accept privacy settings displayed on url load
 		BasePage.currysBase.acceptPrivacySettings();
-
-		ItemsDisplayPage prodDisplayPage = homePage.goToItemsDisplayPage(menuName, prodName);
-		String actProdTitle = prodDisplayPage.getItemTitle();
+		
+		//Navigate to the Items display page, retrieve the title and validate it
+		ItemsDisplayPage itemDisplayPage = homePage.goToItemsDisplayPage(menuName, prodName);
+		String actProdTitle = itemDisplayPage.getItemTitle();
 
 		try {
 			Assert.assertEquals(actProdTitle, expProdTitle);
@@ -37,7 +43,8 @@ public class AddProductToBasketTest extends BaseTest {
 			Assert.fail();
 		}
 
-		ItemDescriptionPage itemDescPage = prodDisplayPage.goToItemOnDescPage(expItemBrand, expItemName);
+		//Navigate to the Ttems description page, retrieve the title and validate it
+		ItemDescriptionPage itemDescPage = itemDisplayPage.goToItemOnDescPage(expItemBrand, expItemName);
 		String itemTitleDescPage = itemDescPage.getItemTitleItemDescPage();
 
 		try {
@@ -55,7 +62,10 @@ public class AddProductToBasketTest extends BaseTest {
 
 		}
 
+		// Add item to basket and validate the success message
 		itemDescPage.addItemToBasket();
+		
+		String actItemBasketAddSuccessMsg = itemDescPage.getItemAddedSuccessMsg();
 		
 		try {
 			

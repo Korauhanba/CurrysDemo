@@ -40,6 +40,8 @@ public class CurrysBase {
 		
 		if(currysLogo.isDisplayed()) {
 			
+			System.out.println(ExtentListeners.test.log(Status.INFO, "DEF"));
+			
 			ExtentListeners.test.log(Status.INFO, "Currys Logo is displayed.");
 			
 			/*
@@ -77,7 +79,11 @@ public class CurrysBase {
 	// Method to navigate back to home page by clicking on the Currys logo
 	public void navigateBackToHomePage() {
 		
-		currysLogo.click();
+		try {
+			currysLogo.click();	
+		}catch(Throwable t) {
+			ExtentListeners.test.log(Status.FAIL, t.getMessage());
+		}
 		
 	}
 	
@@ -108,7 +114,11 @@ public class CurrysBase {
 
 		if (cookiesBanner.isDisplayed()) {
 
-			acceptAllCookiesBtn.click();
+			try {
+				acceptAllCookiesBtn.click();	
+			}catch(Throwable t) {
+				ExtentListeners.test.log(Status.FAIL, t.getMessage());
+			}
 
 		}
 
@@ -120,7 +130,5 @@ public class CurrysBase {
 		return driver.getCurrentUrl();
 
 	}
-
-
 
 }

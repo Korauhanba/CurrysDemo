@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>1/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Jan 09 21:41:08 GMT 2022</td>
+<td>Started on:</td><td>Wed Jan 12 11:12:07 GMT 2022</td>
 </tr>
-<tr><td>Total time:</td><td>320 seconds (320583 ms)</td>
+<tr><td>Total time:</td><td>169 seconds (169228 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -79,8 +79,8 @@ function toggleAllBoxes() {
 <td><div><pre>java.lang.AssertionError: null
 	at testcases.AddProductToBasketTest.addProductToBasket(AddProductToBasketTest.java:71)
 	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1628848368", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1628848368'><pre>java.lang.AssertionError: null
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2091684862", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2091684862'><pre>java.lang.AssertionError: null
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.fail(Assert.java:106)
 	at testcases.AddProductToBasketTest.addProductToBasket(AddProductToBasketTest.java:71)
@@ -113,64 +113,18 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>52</td>
-<td>testcases.AddProductToBasketTest@632ceb35</td></tr>
+<td>50</td>
+<td>testcases.AddProductToBasketTest@35432107</td></tr>
 <tr>
 <td title='testcases.AddProductToBasketTest.addProductToBasket()'><b>addProductToBasket</b><br>Test class: testcases.AddProductToBasketTest<br>Parameters: chrome, Appliances, Washing machines, Washing machines, HOTPOINT, NSWM 1043C GG UK N 10 kg 1400 Spin Washing Machine - Graphite, This item has been added to your basket</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: disconnected: unable to send message to renderer
-  (Session info: chrome=97.0.4692.71)
-Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
-System info: host: &apos;DESKTOP-11SJ4LJ&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a3efc64016a309983cb93655119054c7, findElement {using=xpath, value=//*[@class=&apos;page-title nosp&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\KORAUH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62605}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62605/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a3efc64016a309983cb93655119054c7
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy15.getText(Unknown Source)
-	at pages.ItemDescriptionPage.getItemTitleItemDescPage(ItemDescriptionPage.java:32)
-	at testcases.AddProductToBasketTest.addProductToBasket(AddProductToBasketTest.java:41)
+<td><div><pre>java.lang.AssertionError: null
+	at testcases.AddProductToBasketTest.addProductToBasket(AddProductToBasketTest.java:71)
 	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1976870927", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1976870927'><pre>org.openqa.selenium.WebDriverException: disconnected: unable to send message to renderer
-  (Session info: chrome=97.0.4692.71)
-Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
-System info: host: &apos;DESKTOP-11SJ4LJ&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a3efc64016a309983cb93655119054c7, findElement {using=xpath, value=//*[@class=&apos;page-title nosp&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\KORAUH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62605}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62605/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a3efc64016a309983cb93655119054c7
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy15.getText(Unknown Source)
-	at pages.ItemDescriptionPage.getItemTitleItemDescPage(ItemDescriptionPage.java:32)
-	at testcases.AddProductToBasketTest.addProductToBasket(AddProductToBasketTest.java:41)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1510535132", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1510535132'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.fail(Assert.java:106)
+	at testcases.AddProductToBasketTest.addProductToBasket(AddProductToBasketTest.java:71)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -200,8 +154,8 @@ Session ID: a3efc64016a309983cb93655119054c7
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>51</td>
-<td>testcases.AddProductToBasketTest@632ceb35</td></tr>
+<td>65</td>
+<td>testcases.AddProductToBasketTest@35432107</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -213,8 +167,8 @@ Session ID: a3efc64016a309983cb93655119054c7
 <tr>
 <td title='testcases.AddProductToBasketTest.addProductToBasket()'><b>addProductToBasket</b><br>Test class: testcases.AddProductToBasketTest<br>Parameters: firefox, Appliances, Kettles, Kettles, ESSENTIALS, C17JKW17 Jug Kettle - White, This item has been added to your basket</td>
 <td></td>
-<td>58</td>
-<td>testcases.AddProductToBasketTest@632ceb35</td></tr>
+<td>46</td>
+<td>testcases.AddProductToBasketTest@35432107</td></tr>
 </table><p>
 </body>
 </html>

@@ -5,9 +5,11 @@ import java.util.List;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.testng.Assert;
+
+import com.aventstack.extentreports.Status;
 
 import base.BasePage;
+import extentlisteners.ExtentListeners;
 
 public class ItemsDisplayPage extends BasePage {
 
@@ -34,44 +36,29 @@ public class ItemsDisplayPage extends BasePage {
 
 	public ItemDescriptionPage goToItemOnDescPage(String expItemBrand, String expItemName) {
 
-		label: for (WebElement itemBrand : itemBrands) {
-
-			if (itemBrand.getText().equals(expItemBrand)) {
-
-				for (WebElement itemName : itemNames) {
-
-					if (itemName.getText().equals(expItemName)) {
-
-						itemName.click();
-						break label;
-
+		label: 
+			
+			try {
+				for (WebElement itemBrand : itemBrands) {
+					if (itemBrand.getText().equals(expItemBrand)) {
+						for (WebElement itemName : itemNames) {
+							if (itemName.getText().equals(expItemName)) {
+								try {
+									itemName.click();					
+								}catch(Throwable t) {
+									ExtentListeners.test.log(Status.FAIL, t.getMessage());
+								}
+								break label;
+							}
+						}
 					}
 				}
+			}catch(Throwable t) {
+				ExtentListeners.test.log(Status.FAIL, t.getMessage());
 			}
-		}
-	
+		
 		return new ItemDescriptionPage(driver);
 
 	}
 	
-/*	public void searchedItemListed(String searchData) {
-		
-		for (WebElement itemName : itemNames) {
-
-			try {
-				Assert.assertTrue(itemName.getText().contains(searchData));
-				log.info("");
-				
-			}catch(Throwable t) {
-				
-				
-				
-			}
-			
-			
-			
-		}*/
-		
-
-
 }

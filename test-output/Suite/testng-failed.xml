@@ -4,14 +4,14 @@
   <listeners>
     <listener class-name="extentlisteners.ExtentListeners"/>
   </listeners>
-  <test thread-count="5" name="Currys Store Finder(failed)">
+  <test thread-count="5" name="TS004_TC001_Add items to Product Basket(failed)">
     <classes>
-      <class name="testcases.CurrysStoreFinderTest">
+      <class name="testcases.TS004TC001AddItemsToProductBasketTest">
         <methods>
           <include name="tearDown"/>
-          <include name="currysStoreFinder" invocation-numbers="1"/>
+          <include name="addProductToBasket" invocation-numbers="1 2"/>
         </methods>
-      </class> <!-- testcases.CurrysStoreFinderTest -->
+      </class> <!-- testcases.TS004TC001AddItemsToProductBasketTest -->
     </classes>
-  </test> <!-- Currys Store Finder(failed) -->
+  </test> <!-- TS004_TC001_Add items to Product Basket(failed) -->
 </suite> <!-- Failed suite [Suite] -->
