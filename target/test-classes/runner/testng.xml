@@ -7,7 +7,7 @@
 		<listener class-name="extentlisteners.ExtentListeners"></listener>
 	</listeners>
 
-	<!-- <test name="TS001_TC001_Currys URL and logo">
+	<test name="TS001_TC001_Currys URL and logo">
 		<classes>
 			<class name="testcases.TS001TC001CurrysURLAndLogoTest" />
 		</classes>
@@ -30,7 +30,7 @@
 			<class
 				name="testcases.TS003TC001NavigationToMainMenuProductTest" />
 		</classes>
-	</test> -->
+	</test>
 
 	<test name="TS004_TC001_Add items to Product Basket">
 		<classes>
@@ -38,7 +38,7 @@
 		</classes>
 	</test>
 
-	<!-- <test name="TS005_TC001_Track your order to be delivered today">
+	<test name="TS005_TC001_Track your order to be delivered today">
 		<classes>
 			<class
 				name="testcases.TS005TC001TrackYourOrderDeliveryTodayTest" />
@@ -56,6 +56,6 @@
 			<class
 				name="testcases.TC007TC001NavigationToOtherCurrysWebsiteTest" />
 		</classes>
-	</test> -->
+	</test>
 
 </suite> 
