@@ -1,14 +1,14 @@
 This is a JAVA Maven Selenium WebDriver demo project created to portray my learning for this automation testing technology.
 
-Website: Currys, UK
-Automation Technology: Selenium WebDriver, JAVA
-Design pattern: Page Object Model using Page Factory
+* Website: Currys, UK
+* Automation Technology: Selenium WebDriver, JAVA
+* Design pattern: Page Object Model using Page Factory
 
-Project Framework: Data driven framework
-Testing framework: Testng
-Build & Dependency tool: Maven
-Reporting: Extent Listeners
-Data: Read from excel using Apache POI
+* Project Framework: Data driven framework
+* Testing framework: Testng
+* Build & Dependency tool: Maven
+* Reporting: Extent Listeners
+* Data: Read from excel using Apache POI
 
 The work done by me as part of this project are: 
 * Selection of website for automation.
