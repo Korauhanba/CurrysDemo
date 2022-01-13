@@ -1,9 +1,6 @@
-INFO    2022-01-13 11:08:17,337 [main] com.fasterxml.jackson.databind.deser.Deserializers$Base  - Config properties loaded !!
-INFO    2022-01-13 11:08:17,338 [main] com.fasterxml.jackson.databind.deser.Deserializers$Base  - OR properties loaded !!
-INFO    2022-01-13 11:08:22,133 [main] com.fasterxml.jackson.databind.deser.Deserializers$Base  - Launching Edge !!
-INFO    2022-01-13 11:08:31,703 [main] com.fasterxml.jackson.databind.deser.Deserializers$Base  - Navigating to url: https://www.currys.co.uk/
-INFO    2022-01-13 11:08:37,074 [main] com.fasterxml.jackson.databind.deser.Deserializers$Base  - DB connection established !!
-INFO    2022-01-13 11:08:58,161 [main] com.fasterxml.jackson.databind.deser.Deserializers$Base  - Product Title displayed: Sound bars
-INFO    2022-01-13 11:09:13,552 [main] com.fasterxml.jackson.databind.deser.Deserializers$Base  - The product title matches. Product description page : LOGIK L32SBIN16A 2.1 Sound Bar & Product Display page: LOGIK L32SBIN16A 2.1 Sound Bar
-INFO    2022-01-13 11:09:18,207 [main] com.fasterxml.jackson.databind.deser.Deserializers$Base  - Item LOGIK L32SBIN16A 2.1 Sound Bar has been successfully added to basket.
-INFO    2022-01-13 11:09:19,837 [main] com.fasterxml.jackson.databind.deser.Deserializers$Base  - Test Execution completed
+INFO    2022-01-13 11:30:06,936 [main] com.fasterxml.jackson.databind.deser.Deserializers$Base  - Config properties loaded !!
+INFO    2022-01-13 11:30:06,937 [main] com.fasterxml.jackson.databind.deser.Deserializers$Base  - OR properties loaded !!
+INFO    2022-01-13 11:30:09,294 [main] com.fasterxml.jackson.databind.deser.Deserializers$Base  - Launching Edge !!
+INFO    2022-01-13 11:30:15,270 [main] com.fasterxml.jackson.databind.deser.Deserializers$Base  - Navigating to url: https://www.currys.co.uk/
+INFO    2022-01-13 11:30:20,077 [main] com.fasterxml.jackson.databind.deser.Deserializers$Base  - DB connection established !!
+INFO    2022-01-13 11:30:33,993 [main] com.fasterxml.jackson.databind.deser.Deserializers$Base  - Test Execution completed
