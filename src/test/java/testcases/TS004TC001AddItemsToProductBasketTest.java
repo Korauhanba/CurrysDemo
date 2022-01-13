@@ -65,8 +65,6 @@ public class TS004TC001AddItemsToProductBasketTest extends BaseTest {
 		// Add item to basket and validate the success message
 		itemDescPage.addItemToBasket();
 		
-		String actItemBasketAddSuccessMsg = itemDescPage.getItemAddedSuccessMsg();
-		
 		try {
 			
 			Assert.assertEquals(itemDescPage.getItemAddedSuccessMsg(), expItemBasketAddSuccessMsg);

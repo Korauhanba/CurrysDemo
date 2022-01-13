@@ -39,9 +39,7 @@ public class CurrysBase {
 	public void verifyCurrysLogo() {
 		
 		if(currysLogo.isDisplayed()) {
-			
-			System.out.println(ExtentListeners.test.log(Status.INFO, "DEF"));
-			
+					
 			ExtentListeners.test.log(Status.INFO, "Currys Logo is displayed.");
 			
 			/*
@@ -86,7 +84,6 @@ public class CurrysBase {
 		}
 		
 	}
-	
 	
 	// Method to retrieve the page title
 	public String getPageTitle() {

@@ -4,12 +4,22 @@
   <listeners>
     <listener class-name="extentlisteners.ExtentListeners"/>
   </listeners>
+  <test thread-count="5" name="TS003_TC001_Navigation to main menu product page(failed)">
+    <classes>
+      <class name="testcases.TS003TC001NavigationToMainMenuProductTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="pageNavigation" invocation-numbers="7"/>
+        </methods>
+      </class> <!-- testcases.TS003TC001NavigationToMainMenuProductTest -->
+    </classes>
+  </test> <!-- TS003_TC001_Navigation to main menu product page(failed) -->
   <test thread-count="5" name="TS004_TC001_Add items to Product Basket(failed)">
     <classes>
       <class name="testcases.TS004TC001AddItemsToProductBasketTest">
         <methods>
           <include name="tearDown"/>
-          <include name="addProductToBasket" invocation-numbers="1 2"/>
+          <include name="addProductToBasket" invocation-numbers="0 1 2"/>
         </methods>
       </class> <!-- testcases.TS004TC001AddItemsToProductBasketTest -->
     </classes>

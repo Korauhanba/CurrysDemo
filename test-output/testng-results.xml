@@ -1,13 +1,380 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="3" passed="1">
+<testng-results skipped="0" failed="4" ignored="0" total="21" passed="17">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="101237" started-at="2022-01-13T11:28:52 GMT" finished-at="2022-01-13T11:30:33 GMT">
+  <suite name="Suite" duration-ms="637756" started-at="2022-01-13T17:53:30 GMT" finished-at="2022-01-13T18:04:08 GMT">
     <groups>
     </groups>
-    <test name="TS004_TC001_Add items to Product Basket" duration-ms="101237" started-at="2022-01-13T11:28:52 GMT" finished-at="2022-01-13T11:30:33 GMT">
+    <test name="TS001_TC001_Currys URL and logo" duration-ms="20264" started-at="2022-01-13T17:53:30 GMT" finished-at="2022-01-13T17:53:50 GMT">
+      <class name="testcases.TS001TC001CurrysURLAndLogoTest">
+        <test-method status="PASS" signature="loadPageVerifyURLAndLogo(java.lang.String,java.lang.String)[pri:0, instance:testcases.TS001TC001CurrysURLAndLogoTest@7a1a14a4]" name="loadPageVerifyURLAndLogo" duration-ms="18501" started-at="2022-01-13T17:53:30 GMT" data-provider="dp1" finished-at="2022-01-13T17:53:49 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.currys.co.uk/gbuk/index.html]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadPageVerifyURLAndLogo -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TS001TC001CurrysURLAndLogoTest@7a1a14a4]" name="tearDown" is-config="true" duration-ms="1487" started-at="2022-01-13T17:53:49 GMT" finished-at="2022-01-13T17:53:50 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.TS001TC001CurrysURLAndLogoTest -->
+    </test> <!-- TS001_TC001_Currys URL and logo -->
+    <test name="TS002_TC001_Search available items" duration-ms="42705" started-at="2022-01-13T17:53:51 GMT" finished-at="2022-01-13T17:54:34 GMT">
+      <class name="testcases.TS002TC001SearchAvailableItemsTest">
+        <test-method status="PASS" signature="searchProduct(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TS002TC001SearchAvailableItemsTest@53941c2f]" name="searchProduct" duration-ms="39168" started-at="2022-01-13T17:53:51 GMT" data-provider="dp1" finished-at="2022-01-13T17:54:30 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[grinder]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[grinder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchProduct -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TS002TC001SearchAvailableItemsTest@53941c2f]" name="tearDown" is-config="true" duration-ms="3444" started-at="2022-01-13T17:54:30 GMT" finished-at="2022-01-13T17:54:34 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.TS002TC001SearchAvailableItemsTest -->
+    </test> <!-- TS002_TC001_Search available items -->
+    <test name="TS002_TC002_Search invalid items" duration-ms="37681" started-at="2022-01-13T17:54:34 GMT" finished-at="2022-01-13T17:55:12 GMT">
+      <class name="testcases.TS002TC002SearchInvalidItemsTest">
+        <test-method status="PASS" signature="searchInvalidProduct(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TS002TC002SearchInvalidItemsTest@73194df]" name="searchInvalidProduct" duration-ms="36162" started-at="2022-01-13T17:54:34 GMT" data-provider="dp1" finished-at="2022-01-13T17:55:10 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12132323233323232]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[We can't find a match for "12132323233323232"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchInvalidProduct -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TS002TC002SearchInvalidItemsTest@73194df]" name="tearDown" is-config="true" duration-ms="1418" started-at="2022-01-13T17:55:10 GMT" finished-at="2022-01-13T17:55:12 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.TS002TC002SearchInvalidItemsTest -->
+    </test> <!-- TS002_TC002_Search invalid items -->
+    <test name="TS003_TC001_Navigation to main menu product page" duration-ms="209145" started-at="2022-01-13T17:55:12 GMT" finished-at="2022-01-13T17:58:41 GMT">
+      <class name="testcases.TS003TC001NavigationToMainMenuProductTest">
+        <test-method status="PASS" signature="pageNavigation(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TS003TC001NavigationToMainMenuProductTest@7d1cfb8b]" name="pageNavigation" duration-ms="22681" started-at="2022-01-13T17:55:12 GMT" data-provider="dp1" finished-at="2022-01-13T17:55:35 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Appliances]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Kitchen Appliances, Cookers, Washing Machines | Currys]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Household Appliances]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageNavigation -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TS003TC001NavigationToMainMenuProductTest@7d1cfb8b]" name="tearDown" is-config="true" duration-ms="1424" started-at="2022-01-13T17:55:35 GMT" finished-at="2022-01-13T17:55:36 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="pageNavigation(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TS003TC001NavigationToMainMenuProductTest@7d1cfb8b]" name="pageNavigation" duration-ms="23371" started-at="2022-01-13T17:55:36 GMT" data-provider="dp1" finished-at="2022-01-13T17:55:59 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[TV & Audio]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[TVs, DVD & Blu Ray, Home Cinema & Gaming | Currys]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[TV and Home Entertainment]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageNavigation -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TS003TC001NavigationToMainMenuProductTest@7d1cfb8b]" name="tearDown" is-config="true" duration-ms="1803" started-at="2022-01-13T17:55:59 GMT" finished-at="2022-01-13T17:56:01 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="pageNavigation(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TS003TC001NavigationToMainMenuProductTest@7d1cfb8b]" name="pageNavigation" duration-ms="22315" started-at="2022-01-13T17:56:01 GMT" data-provider="dp1" finished-at="2022-01-13T17:56:23 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Computing]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Laptops, Tablets, Desktop PCs, Computing Accessories | Currys]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Computing]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageNavigation -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TS003TC001NavigationToMainMenuProductTest@7d1cfb8b]" name="tearDown" is-config="true" duration-ms="1210" started-at="2022-01-13T17:56:23 GMT" finished-at="2022-01-13T17:56:25 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="pageNavigation(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TS003TC001NavigationToMainMenuProductTest@7d1cfb8b]" name="pageNavigation" duration-ms="35331" started-at="2022-01-13T17:56:25 GMT" data-provider="dp1" finished-at="2022-01-13T17:57:00 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Gaming]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Gaming | Console and PC Gaming | Currys]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Gaming]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageNavigation -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TS003TC001NavigationToMainMenuProductTest@7d1cfb8b]" name="tearDown" is-config="true" duration-ms="1327" started-at="2022-01-13T17:57:00 GMT" finished-at="2022-01-13T17:57:01 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="pageNavigation(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TS003TC001NavigationToMainMenuProductTest@7d1cfb8b]" name="pageNavigation" duration-ms="22237" started-at="2022-01-13T17:57:01 GMT" data-provider="dp1" finished-at="2022-01-13T17:57:24 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Cameras]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Digital Cameras, DSLR, Camcorders, Accessories | Currys]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Cameras and camcorders]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageNavigation -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TS003TC001NavigationToMainMenuProductTest@7d1cfb8b]" name="tearDown" is-config="true" duration-ms="1442" started-at="2022-01-13T17:57:24 GMT" finished-at="2022-01-13T17:57:25 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="pageNavigation(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TS003TC001NavigationToMainMenuProductTest@7d1cfb8b]" name="pageNavigation" duration-ms="22956" started-at="2022-01-13T17:57:25 GMT" data-provider="dp1" finished-at="2022-01-13T17:57:48 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Phones]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Mobile Phones & Phones Accessories | Currys Mobile]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Mobile Phones]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageNavigation -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TS003TC001NavigationToMainMenuProductTest@7d1cfb8b]" name="tearDown" is-config="true" duration-ms="1117" started-at="2022-01-13T17:57:48 GMT" finished-at="2022-01-13T17:57:49 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="pageNavigation(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TS003TC001NavigationToMainMenuProductTest@7d1cfb8b]" name="pageNavigation" duration-ms="24159" started-at="2022-01-13T17:57:49 GMT" data-provider="dp1" finished-at="2022-01-13T17:58:13 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Smart Tech]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Smart Tech - Get the latest Smart Tech online here | Currys]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Smart Tech]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageNavigation -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TS003TC001NavigationToMainMenuProductTest@7d1cfb8b]" name="tearDown" is-config="true" duration-ms="1327" started-at="2022-01-13T17:58:13 GMT" finished-at="2022-01-13T17:58:15 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="FAIL" signature="pageNavigation(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TS003TC001NavigationToMainMenuProductTest@7d1cfb8b]" name="pageNavigation" duration-ms="24753" started-at="2022-01-13T17:58:15 GMT" data-provider="dp1" finished-at="2022-01-13T17:58:39 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Home & Outdoor]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Home & Outdoor Accessories | Currys]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[home and outdoor]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.fail(Assert.java:106)
+at testcases.TS003TC001NavigationToMainMenuProductTest.pageItemTitleValidation(TS003TC001NavigationToMainMenuProductTest.java:60)
+at testcases.TS003TC001NavigationToMainMenuProductTest.pageNavigation(TS003TC001NavigationToMainMenuProductTest.java:117)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageNavigation -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TS003TC001NavigationToMainMenuProductTest@7d1cfb8b]" name="tearDown" is-config="true" duration-ms="1177" started-at="2022-01-13T17:58:40 GMT" finished-at="2022-01-13T17:58:41 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.TS003TC001NavigationToMainMenuProductTest -->
+    </test> <!-- TS003_TC001_Navigation to main menu product page -->
+    <test name="TS004_TC001_Add items to Product Basket" duration-ms="154503" started-at="2022-01-13T17:58:41 GMT" finished-at="2022-01-13T18:01:16 GMT">
       <class name="testcases.TS004TC001AddItemsToProductBasketTest">
-        <test-method status="PASS" signature="addProductToBasket(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TS004TC001AddItemsToProductBasketTest@265adfad]" name="addProductToBasket" duration-ms="41300" started-at="2022-01-13T11:28:52 GMT" data-provider="dp1" finished-at="2022-01-13T11:29:34 GMT">
+        <test-method status="FAIL" signature="addProductToBasket(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TS004TC001AddItemsToProductBasketTest@4ce1d6d0]" name="addProductToBasket" duration-ms="50073" started-at="2022-01-13T17:58:41 GMT" data-provider="dp1" finished-at="2022-01-13T17:59:31 GMT">
           <params>
             <param index="0">
               <value>
@@ -45,14 +412,54 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.fail(Assert.java:106)
+at testcases.TS004TC001AddItemsToProductBasketTest.addProductToBasket(TS004TC001AddItemsToProductBasketTest.java:79)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addProductToBasket -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TS004TC001AddItemsToProductBasketTest@265adfad]" name="tearDown" is-config="true" duration-ms="1281" started-at="2022-01-13T11:29:34 GMT" finished-at="2022-01-13T11:29:35 GMT">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TS004TC001AddItemsToProductBasketTest@4ce1d6d0]" name="tearDown" is-config="true" duration-ms="1231" started-at="2022-01-13T17:59:32 GMT" finished-at="2022-01-13T17:59:33 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="FAIL" signature="addProductToBasket(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TS004TC001AddItemsToProductBasketTest@265adfad]" name="addProductToBasket" duration-ms="29174" started-at="2022-01-13T11:29:35 GMT" data-provider="dp1" finished-at="2022-01-13T11:30:04 GMT">
+        <test-method status="FAIL" signature="addProductToBasket(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TS004TC001AddItemsToProductBasketTest@4ce1d6d0]" name="addProductToBasket" duration-ms="49021" started-at="2022-01-13T17:59:33 GMT" data-provider="dp1" finished-at="2022-01-13T18:00:22 GMT">
           <params>
             <param index="0">
               <value>
@@ -92,24 +499,24 @@
           </params>
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Unable to locate element: //*[@class='ConnectedHeaderTitle__StyledH1-sc-ckick5-0 qumlm pageTitle']
+              <![CDATA[Unable to locate element: //div[@data-component='CSAPopin']
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.1.1', revision: 'e8fcc2cecf'
 System info: host: 'DESKTOP-11SJ4LJ', ip: '192.168.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [41c9bf73-dfa4-4586-a2b6-1688e84da7d0, findElement {using=xpath, value=//*[@class='ConnectedHeaderTitle__StyledH1-sc-ckick5-0 qumlm pageTitle']}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 94.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211103134640, moz:debuggerAddress: localhost:49488, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 25640, moz:profile: C:\Users\Korauhanba Singh\A..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:49488/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 41c9bf73-dfa4-4586-a2b6-1688e84da7d0]]>
+Command: [505dfbf2-7870-4388-a3db-283d2118527b, findElement {using=xpath, value=//div[@data-component='CSAPopin']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 94.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211103134640, moz:debuggerAddress: localhost:54158, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 19752, moz:profile: C:\Users\Korauhanba Singh\A..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:54158/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 505dfbf2-7870-4388-a3db-283d2118527b]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //*[@class='ConnectedHeaderTitle__StyledH1-sc-ckick5-0 qumlm pageTitle']
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@data-component='CSAPopin']
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.1.1', revision: 'e8fcc2cecf'
 System info: host: 'DESKTOP-11SJ4LJ', ip: '192.168.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [41c9bf73-dfa4-4586-a2b6-1688e84da7d0, findElement {using=xpath, value=//*[@class='ConnectedHeaderTitle__StyledH1-sc-ckick5-0 qumlm pageTitle']}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 94.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211103134640, moz:debuggerAddress: localhost:49488, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 25640, moz:profile: C:\Users\Korauhanba Singh\A..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:49488/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 41c9bf73-dfa4-4586-a2b6-1688e84da7d0
+Command: [505dfbf2-7870-4388-a3db-283d2118527b, findElement {using=xpath, value=//div[@data-component='CSAPopin']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 94.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211103134640, moz:debuggerAddress: localhost:54158, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 19752, moz:profile: C:\Users\Korauhanba Singh\A..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:54158/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 505dfbf2-7870-4388-a3db-283d2118527b
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -127,9 +534,9 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at com.sun.proxy.$Proxy15.getText(Unknown Source)
-at pages.ItemsDisplayPage.getItemTitle(ItemsDisplayPage.java:33)
-at testcases.TS004TC001AddItemsToProductBasketTest.addProductToBasket(TS004TC001AddItemsToProductBasketTest.java:34)
+at com.sun.proxy.$Proxy15.isEnabled(Unknown Source)
+at pages.ItemDescriptionPage.addItemToBasket(ItemDescriptionPage.java:65)
+at testcases.TS004TC001AddItemsToProductBasketTest.addProductToBasket(TS004TC001AddItemsToProductBasketTest.java:66)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -164,11 +571,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addProductToBasket -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TS004TC001AddItemsToProductBasketTest@265adfad]" name="tearDown" is-config="true" duration-ms="1763" started-at="2022-01-13T11:30:05 GMT" finished-at="2022-01-13T11:30:06 GMT">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TS004TC001AddItemsToProductBasketTest@4ce1d6d0]" name="tearDown" is-config="true" duration-ms="2619" started-at="2022-01-13T18:00:22 GMT" finished-at="2022-01-13T18:00:25 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="FAIL" signature="addProductToBasket(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TS004TC001AddItemsToProductBasketTest@265adfad]" name="addProductToBasket" duration-ms="25005" started-at="2022-01-13T11:30:06 GMT" data-provider="dp1" finished-at="2022-01-13T11:30:31 GMT">
+        <test-method status="FAIL" signature="addProductToBasket(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TS004TC001AddItemsToProductBasketTest@4ce1d6d0]" name="addProductToBasket" duration-ms="48678" started-at="2022-01-13T18:00:25 GMT" data-provider="dp1" finished-at="2022-01-13T18:01:14 GMT">
           <params>
             <param index="0">
               <value>
@@ -206,48 +613,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@class='ConnectedHeaderTitle__StyledH1-sc-ckick5-0 qumlm pageTitle']"}
-  (Session info: MicrosoftEdge=97.0.1072.55)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.1', revision: 'e8fcc2cecf'
-System info: host: 'DESKTOP-11SJ4LJ', ip: '192.168.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [9095a274973b0fdb991fb25750223ea3, findElement {using=xpath, value=//*[@class='ConnectedHeaderTitle__StyledH1-sc-ckick5-0 qumlm pageTitle']}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 97.0.1072.55, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:58740}, msedge: {msedgedriverVersion: 97.0.1072.55 (ce3bf33648805..., userDataDir: C:\Users\KORAUH~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58740/devtoo..., se:cdpVersion: 97.0.1072.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 9095a274973b0fdb991fb25750223ea3]]>
+              <![CDATA[null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@class='ConnectedHeaderTitle__StyledH1-sc-ckick5-0 qumlm pageTitle']"}
-  (Session info: MicrosoftEdge=97.0.1072.55)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.1', revision: 'e8fcc2cecf'
-System info: host: 'DESKTOP-11SJ4LJ', ip: '192.168.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [9095a274973b0fdb991fb25750223ea3, findElement {using=xpath, value=//*[@class='ConnectedHeaderTitle__StyledH1-sc-ckick5-0 qumlm pageTitle']}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 97.0.1072.55, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:58740}, msedge: {msedgedriverVersion: 97.0.1072.55 (ce3bf33648805..., userDataDir: C:\Users\KORAUH~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58740/devtoo..., se:cdpVersion: 97.0.1072.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 9095a274973b0fdb991fb25750223ea3
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at com.sun.proxy.$Proxy15.getText(Unknown Source)
-at pages.ItemsDisplayPage.getItemTitle(ItemsDisplayPage.java:33)
-at testcases.TS004TC001AddItemsToProductBasketTest.addProductToBasket(TS004TC001AddItemsToProductBasketTest.java:34)
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.fail(Assert.java:106)
+at testcases.TS004TC001AddItemsToProductBasketTest.addProductToBasket(TS004TC001AddItemsToProductBasketTest.java:79)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -278,15 +652,237 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addProductToBasket -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TS004TC001AddItemsToProductBasketTest@265adfad]" name="tearDown" is-config="true" duration-ms="1420" started-at="2022-01-13T11:30:32 GMT" finished-at="2022-01-13T11:30:33 GMT">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TS004TC001AddItemsToProductBasketTest@4ce1d6d0]" name="tearDown" is-config="true" duration-ms="1538" started-at="2022-01-13T18:01:14 GMT" finished-at="2022-01-13T18:01:16 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testcases.TS004TC001AddItemsToProductBasketTest -->
     </test> <!-- TS004_TC001_Add items to Product Basket -->
+    <test name="TS005_TC001_Track your order to be delivered today" duration-ms="52780" started-at="2022-01-13T18:01:16 GMT" finished-at="2022-01-13T18:02:08 GMT">
+      <class name="testcases.TS005TC001TrackYourOrderDeliveryTodayTest">
+        <test-method status="PASS" signature="trackYourOrder(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TS005TC001TrackYourOrderDeliveryTodayTest@531f4093]" name="trackYourOrder" duration-ms="26553" started-at="2022-01-13T18:01:16 GMT" data-provider="dp1" finished-at="2022-01-13T18:01:42 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[8122332.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Contact Number]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[78128190]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Republic of Ireland]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- trackYourOrder -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TS005TC001TrackYourOrderDeliveryTodayTest@531f4093]" name="tearDown" is-config="true" duration-ms="1450" started-at="2022-01-13T18:01:42 GMT" finished-at="2022-01-13T18:01:44 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="trackYourOrder(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TS005TC001TrackYourOrderDeliveryTodayTest@531f4093]" name="trackYourOrder" duration-ms="23419" started-at="2022-01-13T18:01:44 GMT" data-provider="dp1" finished-at="2022-01-13T18:02:07 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[A689912]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Postcode]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[UER123]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[United Kingdom]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- trackYourOrder -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TS005TC001TrackYourOrderDeliveryTodayTest@531f4093]" name="tearDown" is-config="true" duration-ms="1204" started-at="2022-01-13T18:02:07 GMT" finished-at="2022-01-13T18:02:08 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.TS005TC001TrackYourOrderDeliveryTodayTest -->
+    </test> <!-- TS005_TC001_Track your order to be delivered today -->
+    <test name="TS006_TC001_Find a store" duration-ms="54970" started-at="2022-01-13T18:02:08 GMT" finished-at="2022-01-13T18:03:03 GMT">
+      <class name="testcases.TS006TC001FindAStoreTest">
+        <test-method status="PASS" signature="currysStoreFinder(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TS006TC001FindAStoreTest@289710d9]" name="currysStoreFinder" duration-ms="22791" started-at="2022-01-13T18:02:09 GMT" data-provider="dp1" finished-at="2022-01-13T18:02:31 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[penzance]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Currys, Penzance]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- currysStoreFinder -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TS006TC001FindAStoreTest@289710d9]" name="tearDown" is-config="true" duration-ms="1295" started-at="2022-01-13T18:02:31 GMT" finished-at="2022-01-13T18:02:33 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="currysStoreFinder(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TS006TC001FindAStoreTest@289710d9]" name="currysStoreFinder" duration-ms="28894" started-at="2022-01-13T18:02:33 GMT" data-provider="dp1" finished-at="2022-01-13T18:03:02 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[UB34FF]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Currys, Hayes]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- currysStoreFinder -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TS006TC001FindAStoreTest@289710d9]" name="tearDown" is-config="true" duration-ms="1915" started-at="2022-01-13T18:03:02 GMT" finished-at="2022-01-13T18:03:03 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.TS006TC001FindAStoreTest -->
+    </test> <!-- TS006_TC001_Find a store -->
+    <test name="TC007_TC001_Navigation to other Currys website" duration-ms="64331" started-at="2022-01-13T18:03:04 GMT" finished-at="2022-01-13T18:04:08 GMT">
+      <class name="testcases.TC007TC001NavigationToOtherCurrysWebsiteTest">
+        <test-method status="PASS" signature="navigateToOtherCurrysWebsites(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TC007TC001NavigationToOtherCurrysWebsiteTest@78383390]" name="navigateToOtherCurrysWebsites" duration-ms="19905" started-at="2022-01-13T18:03:04 GMT" data-provider="dp1" finished-at="2022-01-13T18:03:24 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Currys Business]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Welcome - Currys Business]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[https://business.currys.co.uk/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToOtherCurrysWebsites -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TC007TC001NavigationToOtherCurrysWebsiteTest@78383390]" name="tearDown" is-config="true" duration-ms="1434" started-at="2022-01-13T18:03:24 GMT" finished-at="2022-01-13T18:03:25 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="navigateToOtherCurrysWebsites(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TC007TC001NavigationToOtherCurrysWebsiteTest@78383390]" name="navigateToOtherCurrysWebsites" duration-ms="21593" started-at="2022-01-13T18:03:25 GMT" data-provider="dp1" finished-at="2022-01-13T18:03:47 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Currys Ireland]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Currys | Laptops, TVs, Washing Machines, Cookers, Smartphones & Lots More]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[https://www.currys.ie/ieen/index.html]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToOtherCurrysWebsites -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TC007TC001NavigationToOtherCurrysWebsiteTest@78383390]" name="tearDown" is-config="true" duration-ms="1705" started-at="2022-01-13T18:03:47 GMT" finished-at="2022-01-13T18:03:48 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="navigateToOtherCurrysWebsites(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TC007TC001NavigationToOtherCurrysWebsiteTest@78383390]" name="navigateToOtherCurrysWebsites" duration-ms="17553" started-at="2022-01-13T18:03:48 GMT" data-provider="dp1" finished-at="2022-01-13T18:04:06 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Partmaster]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Appliance Parts & Electrical Accessories for Home Appliances | Currys Partmaster.co.uk]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[https://www.partmaster.co.uk/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToOtherCurrysWebsites -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TC007TC001NavigationToOtherCurrysWebsiteTest@78383390]" name="tearDown" is-config="true" duration-ms="2043" started-at="2022-01-13T18:04:06 GMT" finished-at="2022-01-13T18:04:08 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.TC007TC001NavigationToOtherCurrysWebsiteTest -->
+    </test> <!-- TC007_TC001_Navigation to other Currys website -->
   </suite> <!-- Suite -->
 </testng-results>

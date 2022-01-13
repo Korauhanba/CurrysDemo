@@ -15,7 +15,7 @@ import pages.HomePage;
 import utilities.DataUtil;
 
 // TC007_TC001_Navigation to other Currys website
-public class TC007TC001NavigationToOtherCurrysWebsiteTest extends BaseTest {
+public class TS007TC001NavigationToOtherCurrysWebsiteTest extends BaseTest {
 	
 	// Test to navigate to websites - Currys Business, Currys Ireland and Partmaster from the Currys main page
 	@Test(dataProviderClass = DataUtil.class, dataProvider = "dp1")
