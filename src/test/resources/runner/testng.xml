@@ -51,10 +51,10 @@
 		</classes>
 	</test>
 
-	<test name="TC007_TC001_Navigation to other Currys website">
+	<test name="TS007_TC001_Navigation to other Currys website">
 		<classes>
 			<class
-				name="testcases.TC007TC001NavigationToOtherCurrysWebsiteTest" />
+				name="testcases.TS007TC001NavigationToOtherCurrysWebsiteTest" />
 		</classes>
 	</test>
 
