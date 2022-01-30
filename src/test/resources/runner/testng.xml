@@ -13,7 +13,7 @@
 		</classes>
 	</test>
 
-	<test name="TS002_TC001_Search available items">
+	<!-- <test name="TS002_TC001_Search available items">
 		<classes>
 			<class name="testcases.TS002TC001SearchAvailableItemsTest" />
 		</classes>
@@ -56,6 +56,6 @@
 			<class
 				name="testcases.TS007TC001NavigationToOtherCurrysWebsiteTest" />
 		</classes>
-	</test>
+	</test> -->
 
 </suite> 
